@@ -1,6 +1,7 @@
 # Take-Home-Assignment---Object-Detection-Comparison
 Molly Delach, MSBA 503, December 3, 2025
 
+Use this code file: Object Detection Comparison (1).ipynb
 This project implements multiple deep learning algorithms to analyze a set of images collected online.
 
 Part A (i): Object Detection
