@@ -11,7 +11,7 @@ I used **two YOLOv8 models** from the Ultralytics library:
 - `yolov8n.pt` – a smaller, faster model
 - `yolov8s.pt` – a slightly larger, more accurate model
 
-For each image and each model, we record:
+For each image and each model, I recorded:
 - Inference time (seconds)
 - Number of objects detected
 - Average detection confidence (probability)
@@ -35,10 +35,3 @@ I extracted extra information from the images in two ways:
    -I used the `clip-ViT-B-32` model from `sentence-transformers` to create 512-dimensional embeddings for each image.
    - Embeddings are stored in a local ChromaDB collection.
    - For each image, we find the most similar image in the dataset based on cosine distance between embeddings.
-
-## Code Files
-
-- `cv_project.ipynb` or `cv_project.py` – main project code with:
-  - YOLOv8 object detection comparison (Part A (i))
-  - Dominant color extraction (Part A (ii))
-  - CLIP embeddings + ChromaDB similarity search (Part B)
